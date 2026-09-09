@@ -1,3 +1,29 @@
+# Movie Data Pipeline & Dashboard
+
+영화진흥위원회 API와 웹 데이터를 수집해 Redshift에 적재하고, Airflow로 일간·주간 파이프라인을 자동화한 팀 프로젝트입니다. Preset 대시보드에서 박스오피스, 관객 수, 좌석 점유율과 지역별 영화 지표를 시각화했습니다.
+
+![영화 데이터 대시보드](Image_folder/bdf9cec0-c9c1-44eb-bd3a-7f41b50796d6.png)
+
+## 한눈에 보기
+
+`KOBIS API / Web Crawling` → `Python ETL` → `Amazon Redshift` → `Airflow` → `Preset Dashboard`
+
+| 구분 | 내용 |
+| --- | --- |
+| 기간 | 2024.06 |
+| 형태 | 4인 팀 프로젝트 |
+| 기술 | Python, Airflow, Redshift, GCP, GitHub Actions, Preset |
+| 담당 | Airflow DAG 작성, 데이터 마트 구성, 대시보드 차트 개발, 발표자료 및 보고서 작성 |
+
+## 주요 구현
+
+- 영화·배우·지역별 관객 데이터를 위한 일간/주간 Airflow DAG 구성
+- 수집 데이터를 분석 목적에 맞는 데이터 마트로 가공
+- GitHub Actions와 Cloud Composer 저장소를 연동해 DAG 배포 자동화
+- 박스오피스, 좌석 점유율, 지역별 매출 및 관객 지표 대시보드 구현
+
+---
+
 # 1. 프로젝트 개요
 
 ## 프로젝트 주제
